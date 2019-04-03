@@ -6,19 +6,19 @@ var cssnano = require('cssnano');
 
 gulp.task('styles', function() {
   var plugins = [
-    autoprefixer(),
+    // autoprefixer(),
     cssnano()
   ];
   return gulp.src('./style.css')
-    .pipe(
-      purgecss({
-        content: ['./*.html']
-      })
-    )
+    // .pipe(
+    //   purgecss({
+    //     content: ['./*.html']
+    //   })
+    // )
     .pipe(postcss(plugins))
     .pipe(gulp.dest('./dest'))
-    .pipe(gulp.src('./*html'))
-    .pipe(gulp.dest('./dest'))
+    // .pipe(gulp.src('./*html'))
+    // .pipe(gulp.dest('./dest'))
 });
 
 gulp.task('watch:styles', function() {

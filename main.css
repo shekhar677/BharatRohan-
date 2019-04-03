@@ -128,7 +128,7 @@
     transition: all 0.3s;
 } */
 #main-nav.active {
-    height: 135px;
+    height: 180px;
     opacity: 1;
 }
 @media (min-width: 30px) {

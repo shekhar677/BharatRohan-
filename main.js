@@ -85,6 +85,8 @@ function sendEmail(e) {
       alert('Failed to send data.');
       modal.style.display = 'none';
     });
+  } else {
+    modal.style.display = 'none';
   }
 }
 
